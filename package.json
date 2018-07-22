@@ -1,0 +1,9 @@
+{
+  "name": "css-grid-layout",
+  "version": "0.1.0",
+  "description": "CSS Grid Layout",
+  "repository": "git@github.com:fabianvelizok/CSS-Grid-Layout.git",
+  "author": "Fabián Veliz <velizfabianhoracio@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
