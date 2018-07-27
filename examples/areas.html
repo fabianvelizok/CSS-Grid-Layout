@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge"
+        http-equiv="X-UA-Compatible">
+  <title>CSS Grid Layout | Areas</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template: 100px minmax(350px, 1fr) 150px / 200px 1fr;
+      grid-gap: 10px 10px;
+      grid-template-areas: "header header"
+                           "navigation content"
+                           "footer footer";
+    }
+
+    .item {
+      background-color: #e6e6e6;
+      border: 1px solid red;
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .navigation {
+      grid-area: navigation;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+  </style>
+  <style>
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Grid Layout | Areas</h1>
+    <h2>Code</h2>
+    <pre>
+      <code id="code"></code>
+    </pre>
+    <h2>Result</h2>
+    <section class="container">
+      <div class="item header">
+        Header
+      </div>
+      <div class="item navigation">
+        Navigation
+      </div>
+      <div class="item content">
+        Content
+      </div>
+      <div class="item footer">
+        Footer
+      </div>
+    </section>
+  </main>
+  <script src="../utils/insertStyleCode.js"></script>
+</body>
+</html>

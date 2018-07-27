@@ -9,6 +9,7 @@ const examples = [
   'displays.html',
   'gaps.html',
   'functions.html',
+  'areas.html',
 ];
 
 window.examples = examples;
