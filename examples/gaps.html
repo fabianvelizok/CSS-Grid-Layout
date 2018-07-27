@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge"
+        http-equiv="X-UA-Compatible">
+  <title>CSS Grid Layout | Gaps</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template: 200px 150px 200px / 25% 200px 25%;
+      grid-gap: 10px 10px;
+    }
+
+    .item {
+      background-color: #e6e6e6;
+      border: 1px solid red;
+      padding: 10px;
+    }
+
+    .inner-grid {
+      background: yellow;
+      display: grid;
+      grid-template: 50px 50px 50px / 25% 50% 25%;
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+    }
+
+    .inner-grid-item {
+      background-color: #fff;
+      border: 1px solid blueviolet;
+    }
+
+  </style>
+  <style>
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Grid Layout | Gaps</h1>
+    <p>You could use, just `gap` and delete the `grid` prefix.</p>
+    <h2>Code</h2>
+    <pre>
+      <code id="code"></code>
+    </pre>
+    <h2>Result</h2>
+    <section class="container">
+      <div class="item">
+        contenido #1
+      </div>
+      <div class="item">
+        contenido #2
+      </div>
+      <div class="item">
+        contenido #3
+      </div>
+      <div class="item inner-grid">
+        <div class="inner-grid-item">
+          subitem #1
+        </div>
+        <div class="inner-grid-item">
+          subitem #2
+        </div>
+        <div class="inner-grid-item">
+          subitem #3
+        </div>
+        <div class="inner-grid-item">
+          subitem #4
+        </div>
+        <div class="inner-grid-item">
+          subitem #5
+        </div>
+      </div>
+      <div class="item">
+        contenido #5
+      </div>
+      <div class="item">
+        contenido #6
+      </div>
+      <div class="item">
+        contenido #7
+      </div>
+      <div class="item">
+        contenido #8
+      </div>
+      <div class="item">
+        contenido #9
+      </div>
+      <div class="item">
+        contenido #10
+      </div>
+      <div class="item">
+        contenido #11
+      </div>
+      <div class="item">
+        contenido #12
+      </div>
+    </section>
+  </main>
+  <script src="../utils/insertStyleCode.js"></script>
+</body>
+</html>
