@@ -1,3 +1,3 @@
 # CSS Grid Layout
 
-## Building some templates using this new module
+## The CSS Grid Layout module in action
