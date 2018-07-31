@@ -10,6 +10,7 @@ const examples = [
   'gaps.html',
   'functions.html',
   'areas.html',
+  'column-sizes.html',
 ];
 
 window.examples = examples;
