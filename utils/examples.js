@@ -12,6 +12,7 @@ const examples = [
   'areas.html',
   'column-sizes.html',
   'row-sizes.html',
+  'naming-lines.html',
 ];
 
 window.examples = examples;

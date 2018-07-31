@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge"
+        http-equiv="X-UA-Compatible">
+  <title>CSS Grid Layout | Naming lines</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: [beginning] 1fr [line-2] 1fr [line-3] 1fr [end-featured] 1fr [line-5] 1fr [end-featured-2] 1fr [line-7] 1fr [end];
+      grid-template-rows: [beginning] 200px [line-2] 200px [end];
+      grid-gap: 5px;
+    }
+
+    .item {
+      background-color: #e6e6e6;
+      border: 1px solid red;
+      padding: 10px;
+    }
+
+    .item:nth-child(1) {
+      background: gray;
+      grid-column: beginning / end-featured;
+      grid-row: beginning / end;
+    }
+
+    .item:nth-child(2) {
+      background: gray;
+      grid-column: end-featured / end-featured-2;
+      grid-row: beginning / end;
+    }
+
+    .item:nth-child(3) {
+      background: gray;
+      grid-column: end-featured-2 / end;
+    }
+  </style>
+  <style>
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSS Grid Layout | Naming lines</h1>
+    <h2>Code</h2>
+    <pre>
+      <code id="code"></code>
+    </pre>
+    <h2>Result</h2>
+    <section class="container">
+      <div class="item">
+        item #1
+      </div>
+      <div class="item">
+        item #2
+      </div>
+      <div class="item">
+        item #3
+      </div>
+      <div class="item">
+        item #4
+      </div>
+      <div class="item">
+        item #5
+      </div>
+    </section>
+  </main>
+  <script src="../utils/insertStyleCode.js"></script>
+</body>
+</html>
