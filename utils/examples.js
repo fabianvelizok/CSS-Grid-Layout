@@ -11,6 +11,7 @@ const examples = [
   'functions.html',
   'areas.html',
   'column-sizes.html',
+  'row-sizes.html',
 ];
 
 window.examples = examples;
