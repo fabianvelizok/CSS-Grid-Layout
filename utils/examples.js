@@ -15,6 +15,7 @@ const examples = [
   'naming-lines.html',
   'implicit-grid.html',
   'align-items.html',
+  'align-content.html',
 ];
 
 window.examples = examples;
