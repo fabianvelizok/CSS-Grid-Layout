@@ -14,6 +14,7 @@ const examples = [
   'row-sizes.html',
   'naming-lines.html',
   'implicit-grid.html',
+  'align-items.html',
 ];
 
 window.examples = examples;
