@@ -13,6 +13,7 @@ const examples = [
   'column-sizes.html',
   'row-sizes.html',
   'naming-lines.html',
+  'implicit-grid.html',
 ];
 
 window.examples = examples;
