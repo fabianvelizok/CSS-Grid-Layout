@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge"
+        http-equiv="X-UA-Compatible">
   <title>CSS Grid Layout | Home</title>
 </head>
 <body>
   <main>
     <h1>CSS Grid Layout</h1>
+    <h2>Examples</h2>
     <nav>
-      <ul id="example-container"></ul>
+      <ul id="examples"></ul>
+    </nav>
+    <h2>Built layouts</h2>
+    <nav>
+      <ul id="layouts"></ul>
     </nav>
   </main>
-  <script src="./utils/examples.js"></script>
+  <script src="./utils/layouts.js"></script> 
+  <script src="./utils/examples.js"></script> 
+  <script src="./utils/buildList.js"></script> 
   <script>
-    const exampleContainer = document.getElementById('example-container');
 
-    for (let i = 0; i < window.examples.length; i += 1) {
-      const currentText = examples[i].replace('.html', '')
-      const currentLink = `examples/${examples[i]}`;
-
-      const listItem = document.createElement('li');
-      listItem.innerHTML = `<a href=${currentLink}>${currentText}</a>`
-
-      exampleContainer.appendChild(listItem);
-    }
+    window.buildList('#examples', 'examples', window.examples);
+    window.buildList('#layouts', 'layouts', window.layouts);
   </script>
 </body>
 </html>
