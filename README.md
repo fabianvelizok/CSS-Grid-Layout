@@ -8,3 +8,4 @@ You can see some detailed examples of using
 I put new knoledge in practice building some interesting layouts:
 - [Instagram](https://www.instagram.com/)
 - [Pinterest](https://www.pinterest.com/)
+- [Platzi](https://platzi.com/)
